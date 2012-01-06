@@ -1,0 +1,46 @@
+Source: opencore-amr
+Section: libs
+Priority: extra
+Maintainer: Debian multimedia packages maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders: Jeongmo Yang <jm80.yang@samsung.com>
+Build-Depends: debhelper (>= 5), autotools-dev
+Standards-Version: 3.7.2
+
+Package: libopencore-amrnb-dev
+Section: libdevel
+Architecture: any
+Depends: libopencore-amrnb (= ${Source-Version})
+XB-Generate-Docs: yes
+Description: opencore AMRNB dev package
+
+Package: libopencore-amrnb
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: opencore AMRNB Library
+
+Package: libopencore-amrnb-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencore-amrnb (= ${Source-Version})
+Description: opencore AMRNB Debug Library (unstripped)
+
+Package: libopencore-amrwb-dev
+Section: libdevel
+Architecture: any
+Depends: libopencore-amrwb (= ${Source-Version})
+XB-Generate-Docs: yes
+Description: opencore AMRWB dev package
+
+Package: libopencore-amrwb
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: opencore AMRWB Library
+
+Package: libopencore-amrwb-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencore-amrwb (= ${Source-Version})
+Description: opencore AMRWB Debug Library (unstripped)
+

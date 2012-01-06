@@ -1,0 +1,5 @@
+# if your module creates shared libraries
+@PREFIX@/include/opencore-amrnb
+@PREFIX@/lib/libopencore-amrnb.a
+@PREFIX@/lib/libopencore-amrnb.so
+@PREFIX@/lib/pkgconfig/opencore-amrnb.pc
