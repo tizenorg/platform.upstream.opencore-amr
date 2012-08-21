@@ -1,5 +1,0 @@
-# if your module creates shared libraries
-@PREFIX@/include/opencore-amrwb
-@PREFIX@/lib/libopencore-amrwb.a
-@PREFIX@/lib/libopencore-amrwb.so
-@PREFIX@/lib/pkgconfig/opencore-amrwb.pc

@@ -1,4 +1,3 @@
-#sbs-git:slp/unmodified/opencore-amr opencore-amr 0.1.2 be191ced743e9ac5b45642d5560a29d427a8302c
 Name:       opencore-amr
 Summary:    opencore AMRNB dev package
 Version:    0.1.2
