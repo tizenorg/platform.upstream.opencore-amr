@@ -24,7 +24,7 @@ opencore AMRNB dev package (Developement)
 
 %build
 ./autogen.sh
-./configure --prefix=/usr --mandir=%{_prefix}/share/man --infodir=%{_prefix}/share/info CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS"
+%configure
 make %{?jobs:-j%jobs}
 
 %install
