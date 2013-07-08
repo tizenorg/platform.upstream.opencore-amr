@@ -1,0 +1,8 @@
+Change-Id: I72a792824e352ad4084c3729154a444f57b7b8bb
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:37:00 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5258
+Project: platform/upstream/opencore-amr
+Branch: refs/heads/tizen
