@@ -1,24 +1,24 @@
 Name:       opencore-amr
-Summary:    opencore AMRNB dev package
-Version:    0.1.2
-Release:    4
-Group:      libdevel
+Summary:    Opencore AMR package
+Version:    0.1.3
+Release:    0
+Group:      Multimedia/Framework
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
 Source1001: 	opencore-amr.manifest
 
 
 %description
-opencore AMRNB dev package
+opencore AMRNB and AMRWB package
 
 
-%package devel 
-Summary:    opencore AMRNB dev package (Developement)
-Group:      TO_BE_FILLED 
+%package devel
+Summary:    Opencore AMR package (Development)
+Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
-opencore AMRNB dev package (Developement)
+opencore AMRNB and AMRWB development package
 
 %prep
 %setup -q
@@ -35,26 +35,22 @@ mkdir -p %{buildroot}/usr/share/license
 cp LICENSE %{buildroot}/usr/share/license/%{name}
 %make_install
 
-%post
+%post -p /sbin/ldconfig
 
-%postun
+%postun -p /sbin/ldconfig
 
 
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
-%{_libdir}/libopencore-amrnb.so.0
-%{_libdir}/libopencore-amrnb.so.0.0.2
-%{_libdir}/libopencore-amrwb.so.0
-%{_libdir}/libopencore-amrwb.so.0.0.2
+%{_libdir}/libopencore-amrnb.so*
+%{_libdir}/libopencore-amrwb.so*
 %{_datadir}/license/%{name}
 
-%files devel 
+%files devel
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{_includedir}/opencore-amrnb/*.h
 %{_includedir}/opencore-amrwb/*.h
-%{_libdir}/libopencore-amrnb.so
-%{_libdir}/libopencore-amrwb.so
 %{_libdir}/pkgconfig/opencore-amrnb.pc
 %{_libdir}/pkgconfig/opencore-amrwb.pc
